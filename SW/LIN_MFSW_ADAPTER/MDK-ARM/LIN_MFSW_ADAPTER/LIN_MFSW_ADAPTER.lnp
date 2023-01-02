@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"lin_mfsw_adapter\startup_stm32f103xb.o"
+"lin_mfsw_adapter\main.o"
+"lin_mfsw_adapter\stm32f1xx_it.o"
+"lin_mfsw_adapter\stm32f1xx_hal_msp.o"
+"lin_mfsw_adapter\buttons.o"
+"lin_mfsw_adapter\identification.o"
+"lin_mfsw_adapter\stm32f1xx_hal_gpio_ex.o"
+"lin_mfsw_adapter\stm32f1xx_hal_iwdg.o"
+"lin_mfsw_adapter\stm32f1xx_hal.o"
+"lin_mfsw_adapter\stm32f1xx_hal_rcc.o"
+"lin_mfsw_adapter\stm32f1xx_hal_rcc_ex.o"
+"lin_mfsw_adapter\stm32f1xx_hal_gpio.o"
+"lin_mfsw_adapter\stm32f1xx_hal_dma.o"
+"lin_mfsw_adapter\stm32f1xx_hal_cortex.o"
+"lin_mfsw_adapter\stm32f1xx_hal_pwr.o"
+"lin_mfsw_adapter\stm32f1xx_hal_flash.o"
+"lin_mfsw_adapter\stm32f1xx_hal_flash_ex.o"
+"lin_mfsw_adapter\stm32f1xx_hal_exti.o"
+"lin_mfsw_adapter\stm32f1xx_hal_tim.o"
+"lin_mfsw_adapter\stm32f1xx_hal_tim_ex.o"
+"lin_mfsw_adapter\stm32f1xx_hal_uart.o"
+"lin_mfsw_adapter\system_stm32f1xx.o"
+"lin_mfsw_adapter\retarget_io.o"
+--strict --scatter "LIN_MFSW_ADAPTER\LIN_MFSW_ADAPTER.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LIN_MFSW_ADAPTER.map" -o LIN_MFSW_ADAPTER\LIN_MFSW_ADAPTER.axf
